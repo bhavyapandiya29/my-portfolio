@@ -73,24 +73,6 @@ border-radius: 10%;
   } 
   
 
-   /* .skills_image img {
    
-    margin-top: 4vh;
-    margin-right: 15px;
-    margin-left: 85px;
-    box-shadow: 4px 4px 10px rgba(76, 172, 237, 0.313);
-   height: 60px;
-    width: 60px;
-   
-    border-radius: 10px;
-   
-    background: conic-gradient(#64adee, #00f0ff, #64adee);
-    animation: rotateBorder 12s linear infinite;
-  }
-  
-  @keyframes rotateBorder {
-    100% { transform: rotate(360deg); }
-  }
-   */
   
   
