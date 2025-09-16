@@ -1,0 +1,12 @@
+.footer{
+    color: aliceblue;
+        height: 80px;
+       margin-top: 70px;
+        background-color:rgb(13, 25, 39) ;
+       
+   }
+   #footer_content{
+    color: white;
+    padding-top: 3.5vh;
+    padding-left: 70vh;
+   }

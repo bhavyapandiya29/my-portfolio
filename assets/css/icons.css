@@ -1,0 +1,15 @@
+.icons{
+    color: aliceblue;
+    justify-content: center;
+    display: flex;
+    gap: 18px;
+    font-size: 28px;
+    margin-top: 2vh;
+    }
+    .icons a{
+      color: white;           
+      transition: all 0.3s ease;  
+    }
+    .icons a:hover {
+          transform: scale(1.2);      
+     }
