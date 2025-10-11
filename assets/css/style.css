@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
-body {
+html,body {
     background-color: black;
     overflow-x: hidden;
     

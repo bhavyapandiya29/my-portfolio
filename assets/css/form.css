@@ -1,5 +1,17 @@
+.form{
+margin: auto;
+
+
+}
+#form_contact{
+   margin: auto;
+
+width:fit-content ;}
+
+
+
 #form_heading{
-    color:rgb(239, 181, 21);
+color:rgb(239, 181, 21);
   font-size: 20px;
   justify-items: center;
   margin-top: 4vh;
@@ -7,15 +19,17 @@
   font-weight: 800;
   top: 2%;
    }
+
    #form_content input{
    margin-left: 66vh;
   font-size:35px;
    color: rgb(16, 16, 17);
    margin-top: 2%;
    background-color: white;
-   
    }
-   #submit button{display: flex;
+   
+   #submit button{
+      display: flex;
 justify-content: center;
 margin-left: 80vh;
 font-size: 40px;

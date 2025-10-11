@@ -1,0 +1,229 @@
+/* Simple Mobile Responsive Design - Only for screens less than 768px */
+
+@media (max-width: 768px) {
+  
+  /* Header adjustments */
+  #header {
+    /* padding: 0.5rem 1rem; */
+    min-height: 50px;
+  }
+  
+  #container_left .logo {
+    height: 40px;
+  }
+  
+  #container_right {
+    display: none; /* Hide navigation on mobile */
+  }
+  
+  /* Front Page adjustments */
+  .image {
+    height: 100vh;
+    background-position: center top 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0%; /* No gap between header and image */
+  }
+  
+  #text {
+    font-size: 1rem;
+    top: 13%;
+    left: 2%;
+    right: 5%;
+   
+  }
+  
+  #texts {
+    font-size: 6px;
+    top: 23vh;
+    left: 2%;
+    right: 15%;
+   
+  }
+  
+  .top_icons {
+    padding-left: 2%;
+  }
+  
+  .top_icons a {
+    margin-top: 28vh;
+    padding-left: 0;
+    font-size: 10px;
+  }
+  
+  .button {
+    position: relative;
+    top: 0%;
+    left: 2%;
+    width: auto;
+    justify-content: flex-start;
+    margin-top: 0rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #about_me, #contact_me {
+    width: 60px;
+    height: 20px;
+    font-size: 0.5rem;
+   margin: 0%;
+  }
+  
+  /* About Me adjustments */
+  .about {
+    margin-top: -58vh;
+    padding: 20px;
+    max-width: 90%;
+    
+  }
+  
+  #heading {
+    font-size: 2rem;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  #content {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Skills adjustments */
+  .skills {
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px 10px;
+  }
+  
+  .skills_heading {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  .skills_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .skills_image img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+  
+  /* Project adjustments */
+  #project_heading {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  #projects {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  #projects img {margin-right: 20px;
+    max-width: 90%; 
+    height: auto;
+    padding-right: 20px;
+
+  }
+  
+  #project_text {
+    margin: 20px 10px;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Certificate adjustments */
+  #certificate_heading {
+    font-size: 2rem;
+    text-align: center;
+    /* padding: 20px 10px; */
+  }
+  
+  .certificate_slider {margin-top: 10px;
+   margin-left: 13px;
+   
+
+    /* margin: 20px auto; */
+    max-width: 100%;
+    height: 400px;
+  }
+  
+  .certificate_item img {padding-top: 2px;
+    width: 95%;
+    max-height: 95%;
+    padding-left: 20px;
+    
+  }
+  
+  /* Contact adjustments */
+  #connect {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  #connect_line {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .icons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .icons a {
+    font-size: 24px;
+  }
+  
+  /* Form adjustments */
+  #form_heading {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  #form_content input {
+    margin: 10px auto;
+    font-size: 16px;
+    width: 90%;
+    max-width: 300px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  #submit button {
+    margin: 20px auto;
+    font-size: 18px;
+    width: 120px;
+    height: 45px;
+    display: block;
+  }
+  
+  /* Footer adjustments */
+  .footer {
+    height: 60px;
+    margin-top: 40px;
+  }
+  
+  #footer_content {
+    padding-top: 2vh;
+    padding-left: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
