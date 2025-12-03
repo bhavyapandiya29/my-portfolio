@@ -80,6 +80,11 @@ padding: 4px 10px;
 
   color: rgb(158, 107, 44);}
 
+/* Contact link hide karo navbar se sab jagah se */
+#container_right a[href="#contact"] {
+    display: none !important;
+}
+
 /*media query for header*/
   
-  
+   

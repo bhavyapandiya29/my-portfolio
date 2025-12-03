@@ -1,7 +1,8 @@
 
 const words = ["Coder","Youtuber", "Artist", ];
 let i = 0;
-const textElement = document.querySelector(".changing-text");
+// Select all changing-text elements (front page + About Me)
+const textElements = document.querySelectorAll(".changing-text");
 
 // function changeWord() {
 //   textElement.classList.add("slide");
@@ -14,8 +15,13 @@ const textElement = document.querySelector(".changing-text");
 const colors = ["#00ffcc","#ff3366","#ffee32"];
 
 function changeWord() {
-  textElement.textContent = words[i];
-  textElement.style.color = colors[i];
+  // Update all changing-text elements
+  textElements.forEach(textElement => {
+    if (textElement) {
+      textElement.textContent = words[i];
+      textElement.style.color = colors[i];
+    }
+  });
   i = (i + 1) % words.length;
 }
 

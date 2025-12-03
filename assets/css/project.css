@@ -9,16 +9,39 @@
     
   }
   #projects{
-    margin-left: 18vh;
-  margin-right: 19vh;
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
   }
+  
+  #projects img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    /* Blue shadow/glow hata di */
+    box-shadow: none;
+  }
+  
   #project_text{
     color: aliceblue;
-    margin-left: 36vh;
-    margin-top: 0vh;
-    margin-right: 32vh;
-    font-size: 20px;
+    margin: 30px auto 0 auto;
+    max-width: 80%;
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
     background-color: rgb(16, 35, 35);
-    padding: 5vh;
-    
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 1.8;
+    /* Image ke same width me align */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #project_text h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: rgb(100, 173, 238);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
   }

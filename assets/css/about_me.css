@@ -44,12 +44,17 @@
   
   #content {
     color: white;
-   font-size: 30 px;
+   font-size: 40 px;
    align-items: flex-start;
     /* padding-left: 4%;
     padding-right: 4%; */
     font-weight: lighter;
    
+  }
+  
+  /* By default (desktop), mobile intro line hide rahegi */
+  #content .about-intro-mobile {
+    display: none;
   }
   
   

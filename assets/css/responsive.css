@@ -1,6 +1,6 @@
-/* Simple Mobile Responsive Design - Only for screens less than 768px */
+/* Simple Mobile/Tablet Responsive Design - screens up to 1000px */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   
   /* Header adjustments */
   #header {
@@ -16,66 +16,43 @@
     display: none; /* Hide navigation on mobile */
   }
   
-  /* Front Page adjustments */
+  /* Front Page - choti screen pe sirf circular portfolio image */
   .image {
-    height: 100vh;
-    background-position: center top 60px;
-    background-size: contain;
+    margin-top: 70px;               /* fixed navbar ke neeche gap */
+    width: 65vw;
+    height: 65vw;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Yahi file actual folder me hai */
+    background-image: url("../../images/portfolio circle image 1 copy.jpeg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    margin-top: 0%; /* No gap between header and image */
-  }
-  
-  #text {
-    font-size: 1rem;
-    top: 13%;
-    left: 2%;
-    right: 5%;
-   
-  }
-  
-  #texts {
-    font-size: 6px;
-    top: 23vh;
-    left: 2%;
-    right: 15%;
-   
-  }
-  
-  .top_icons {
-    padding-left: 2%;
-  }
-  
-  .top_icons a {
-    margin-top: 28vh;
-    padding-left: 0;
-    font-size: 10px;
-  }
-  
-  .button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     position: relative;
-    top: 0%;
-    left: 2%;
-    width: auto;
-    justify-content: flex-start;
-    margin-top: 0rem;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
   }
-  
-  #about_me, #contact_me {
-    width: 60px;
-    height: 20px;
-    font-size: 0.5rem;
-   margin: 0%;
+
+  /* Front-page text, description, icons, buttons hide on small screens */
+  #text,
+  #texts,
+  .top_icons,
+  .button,
+  #about_me,
+  #contact_me {
+    display: none !important;
   }
   
   /* About Me adjustments */
   .about {
-    margin-top: -58vh;
+    margin-top: 20px;
     padding: 20px;
     max-width: 90%;
-    
+    margin-left: auto;
+    margin-right: auto;
   }
   
   #heading {
@@ -88,6 +65,24 @@
     font-size: 12px;
     text-align: center;
     line-height: 1.6;
+  }
+  
+  /* Mobile / tablet pe About Me intro line visible + center aligned */
+  #content .about-intro-mobile {
+    display: inline;
+    font-size: 1.3em; /* Text thoda bada choti screens pe */
+    font-weight: 500;
+    line-height: 1.8;
+  }
+  
+  /* Mobile pe changing-text visible aur properly styled */
+  #content .changing-text {
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #00ffcc; /* Default color */
+    font-weight: 600;
+    font-size: 1.3em; /* Changing text bhi same size */
   }
   
   /* Skills adjustments */
@@ -129,18 +124,32 @@
     text-align: center;
   }
   
-  #projects img {margin-right: 20px;
-    max-width: 90%; 
+  #projects img {
+    max-width: 95%; 
     height: auto;
-    padding-right: 20px;
-
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    /* Blue shadow/glow hata di mobile pe bhi */
+    box-shadow: none;
   }
   
   #project_text {
-    margin: 20px 10px;
+    margin: 30px auto 0 auto;
+    max-width: 95%;
     padding: 20px;
     font-size: 16px;
     text-align: center;
+    /* Image ke same width me align */
+    width: 95%;
+    box-sizing: border-box;
+  }
+  
+  #project_text h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: rgb(100, 173, 238);
+    font-size: 1.5rem;
   }
   
   /* Certificate adjustments */
@@ -227,3 +236,210 @@
   }
 }
 
+/* ========== LAPTOP / DESKTOP (1001px and above) ========== */
+@media (min-width: 1001px) {
+  /* Front Page - pehle jaisa */
+  .image {
+    background-image: url("../../images/final_background.jpeg");
+    background-size: cover;
+    background-position: right center;
+    margin-top: 0;
+  }
+  
+  #text {
+    font-size: clamp(2rem, 4vw, 4rem);
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    max-width: 50%;
+  }
+  
+  #texts {
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    max-width: 45%;
+  }
+  
+  .top_icons {
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    font-size: 28px;
+  }
+  
+  .top_icons a {
+    margin-top: 0;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    width: 300px;
+  }
+  
+  #about_me, #contact_me {
+    width: 150px;
+    height: 40px;
+    font-size: large;
+  }
+  
+  /* About Me - centered */
+  .about {
+    margin: 60px auto;
+    padding: 30px;
+    max-width: 900px;
+  }
+  
+  #heading {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    text-align: center;
+  }
+  
+  #content {
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    text-align: justify;
+  }
+  
+  /* Skills - centered */
+  .skills {
+    width: 50%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .skills_heading {
+    font-size: clamp(1.8rem, 2.5vw, 2rem);
+    text-align: center;
+  }
+  
+  .skills_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skills_image img {
+    height: 60px;
+    width: 60px;
+    margin: 0;
+  }
+  
+  /* Project - centered */
+  #project_heading {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    text-align: center;
+  }
+  
+  #projects {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+  }
+  
+  #projects img {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    /* Blue shadow/glow hata di desktop pe bhi */
+    box-shadow: none;
+  }
+  
+  #project_text {
+    margin: 30px auto 0 auto;
+    max-width: 80%;
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
+    text-align: center;
+    /* Image ke same width me align */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  #project_text h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: rgb(100, 173, 238);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+  
+  /* Certificate - centered */
+  #certificate_heading {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    text-align: center;
+  }
+  
+  .certificate_slider {
+    margin: 0 auto;
+    max-width: 800px;
+    height: 550px;
+  }
+  
+  .certificate_item img {
+    width: 90%;
+    max-height: 90%;
+  }
+  
+  /* Contact - centered */
+  #connect {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    text-align: center;
+  }
+  
+  #connect_line {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    text-align: center;
+  }
+  
+  .icons {
+    justify-content: center;
+  }
+  
+  /* Form - centered */
+  #form_heading {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    text-align: center;
+  }
+  
+  #form_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #form_content input {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  #submit {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #submit button {
+    margin: 0 auto;
+  }
+  
+  /* Footer - centered */
+  #footer_content {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+ 
