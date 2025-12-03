@@ -20,7 +20,7 @@
     display: block;
     margin: 0 auto;
     border-radius: 12px;
-    /* Blue shadow/glow hata di */
+    
     box-shadow: none;
   }
   
@@ -34,7 +34,7 @@
     border-radius: 12px;
     text-align: center;
     line-height: 1.8;
-    /* Image ke same width me align */
+   
     width: 100%;
     box-sizing: border-box;
   }

@@ -8,7 +8,7 @@ top: 0;
 display: flex;  
 justify-content: space-between;
     align-items: center;           
-    /* padding: 0 20px;  */
+    
     padding: 0.5rem 1rem;
     z-index: 1000; 
     
@@ -37,7 +37,7 @@ section {
 }
 #container_left .logo::after {
   content: "";
-  /* position: absolute; */
+  
   position: relative;
   top: 0;
   left: -100%;
@@ -66,9 +66,9 @@ flex-wrap: wrap;   }
 #container_right a {
     color: black;
     text-decoration: none;
-    /* font-size: 16px; */
+    
     font-size: 1.4rem;
-    /* margin-right: 40px; */
+   
 margin: 0%;
 padding: 4px 10px;
    border: 2px solid transparent;
@@ -80,11 +80,11 @@ padding: 4px 10px;
 
   color: rgb(158, 107, 44);}
 
-/* Contact link hide karo navbar se sab jagah se */
+
 #container_right a[href="#contact"] {
     display: none !important;
 }
 
-/*media query for header*/
+
   
    

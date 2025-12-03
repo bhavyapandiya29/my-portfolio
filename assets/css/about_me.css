@@ -1,21 +1,7 @@
-/* .about {
-    margin-top: 30px; 
-    width: 50%;
-    justify-items: center;
-    margin-left: 25%;
-    background-color: rgb(19, 44, 44);
-    height: 500px;
-    border: 2px solid rgb(100, 173, 238);
-    
-    
-  } */
 
 
-  .about { /*margin-top: 30px;  */
-    /* height: 500px;
-    width: 50%;
-    justify-items: center;
-    margin-left: 25%; */
+
+  .about { 
     margin: 60px auto;
   padding: 30px;
   max-width: 900px;
@@ -46,13 +32,12 @@
     color: white;
    font-size: 40 px;
    align-items: flex-start;
-    /* padding-left: 4%;
-    padding-right: 4%; */
+    
     font-weight: lighter;
    
   }
   
-  /* By default (desktop), mobile intro line hide rahegi */
+  
   #content .about-intro-mobile {
     display: none;
   }

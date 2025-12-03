@@ -2,9 +2,9 @@
 
 @media (max-width: 1000px) {
   
-  /* Header adjustments */
+  
   #header {
-    /* padding: 0.5rem 1rem; */
+    
     min-height: 50px;
   }
   
@@ -13,19 +13,19 @@
   }
   
   #container_right {
-    display: none; /* Hide navigation on mobile */
+    display: none; 
   }
   
-  /* Front Page - choti screen pe sirf circular portfolio image */
+  
   .image {
-    margin-top: 70px;               /* fixed navbar ke neeche gap */
+    margin-top: 70px;              
     width: 65vw;
     height: 65vw;
     max-width: 320px;
     max-height: 320px;
     border-radius: 50%;
     overflow: hidden;
-    /* Yahi file actual folder me hai */
+    
     background-image: url("../../images/portfolio circle image 1 copy.jpeg");
     background-size: cover;
     background-position: center;
@@ -36,7 +36,6 @@
     position: relative;
   }
 
-  /* Front-page text, description, icons, buttons hide on small screens */
   #text,
   #texts,
   .top_icons,
@@ -46,7 +45,7 @@
     display: none !important;
   }
   
-  /* About Me adjustments */
+ 
   .about {
     margin-top: 20px;
     padding: 20px;
@@ -67,25 +66,25 @@
     line-height: 1.6;
   }
   
-  /* Mobile / tablet pe About Me intro line visible + center aligned */
+  
   #content .about-intro-mobile {
     display: inline;
-    font-size: 1.3em; /* Text thoda bada choti screens pe */
+    font-size: 1.3em; 
     font-weight: 500;
     line-height: 1.8;
   }
   
-  /* Mobile pe changing-text visible aur properly styled */
+ 
   #content .changing-text {
     display: inline !important;
     visibility: visible !important;
     opacity: 1 !important;
-    color: #00ffcc; /* Default color */
+    color: #00ffcc; 
     font-weight: 600;
-    font-size: 1.3em; /* Changing text bhi same size */
+    font-size: 1.3em; 
   }
   
-  /* Skills adjustments */
+  
   .skills {
     width: 90%;
     margin: 20px auto;
@@ -112,7 +111,7 @@
     margin: 10px;
   }
   
-  /* Project adjustments */
+  
   #project_heading {
     font-size: 2rem;
     text-align: center;
@@ -130,7 +129,7 @@
     display: block;
     margin: 0 auto;
     border-radius: 12px;
-    /* Blue shadow/glow hata di mobile pe bhi */
+    
     box-shadow: none;
   }
   
@@ -140,7 +139,7 @@
     padding: 20px;
     font-size: 16px;
     text-align: center;
-    /* Image ke same width me align */
+   
     width: 95%;
     box-sizing: border-box;
   }
@@ -152,18 +151,18 @@
     font-size: 1.5rem;
   }
   
-  /* Certificate adjustments */
+  
   #certificate_heading {
     font-size: 2rem;
     text-align: center;
-    /* padding: 20px 10px; */
+    
   }
   
   .certificate_slider {margin-top: 10px;
    margin-left: 13px;
    
 
-    /* margin: 20px auto; */
+    
     max-width: 100%;
     height: 400px;
   }
@@ -175,7 +174,7 @@
     
   }
   
-  /* Contact adjustments */
+ 
   #connect {
     font-size: 24px;
     text-align: center;
@@ -197,7 +196,7 @@
     font-size: 24px;
   }
   
-  /* Form adjustments */
+  
   #form_heading {
     font-size: 18px;
     text-align: center;
@@ -222,7 +221,7 @@
     display: block;
   }
   
-  /* Footer adjustments */
+  
   .footer {
     height: 60px;
     margin-top: 40px;
@@ -236,9 +235,9 @@
   }
 }
 
-/* ========== LAPTOP / DESKTOP (1001px and above) ========== */
+
 @media (min-width: 1001px) {
-  /* Front Page - pehle jaisa */
+  
   .image {
     background-image: url("../../images/final_background.jpeg");
     background-size: cover;
@@ -294,7 +293,7 @@
     font-size: large;
   }
   
-  /* About Me - centered */
+  
   .about {
     margin: 60px auto;
     padding: 30px;
@@ -311,7 +310,7 @@
     text-align: justify;
   }
   
-  /* Skills - centered */
+ 
   .skills {
     width: 50%;
     max-width: 900px;
@@ -337,7 +336,7 @@
     margin: 0;
   }
   
-  /* Project - centered */
+ 
   #project_heading {
     font-size: clamp(2.5rem, 4vw, 3.5rem);
     text-align: center;
@@ -353,7 +352,7 @@
     max-width: 100%;
     margin: 0 auto;
     border-radius: 12px;
-    /* Blue shadow/glow hata di desktop pe bhi */
+   
     box-shadow: none;
   }
   
@@ -362,7 +361,7 @@
     max-width: 80%;
     font-size: clamp(1rem, 1.3vw, 1.3rem);
     text-align: center;
-    /* Image ke same width me align */
+   
     width: 100%;
     box-sizing: border-box;
     padding: 30px;
@@ -376,7 +375,7 @@
     font-size: clamp(1.5rem, 2.5vw, 2rem);
   }
   
-  /* Certificate - centered */
+  
   #certificate_heading {
     font-size: clamp(2.5rem, 4vw, 3.5rem);
     text-align: center;
@@ -393,7 +392,7 @@
     max-height: 90%;
   }
   
-  /* Contact - centered */
+  
   #connect {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     text-align: center;
@@ -408,7 +407,7 @@
     justify-content: center;
   }
   
-  /* Form - centered */
+  
   #form_heading {
     font-size: clamp(1.2rem, 2vw, 1.5rem);
     text-align: center;
@@ -435,7 +434,7 @@
     margin: 0 auto;
   }
   
-  /* Footer - centered */
+  
   #footer_content {
     text-align: center;
     padding-left: 0;
