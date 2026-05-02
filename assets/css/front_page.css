@@ -62,14 +62,9 @@
   }
   
   .top_icons a{
-    color:#000000;           
+    color: black;           
+    text-decoration: none;
     transition: all 0.3s ease;  
-    margin-top: 0;
-    padding: 8px;
-   
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;

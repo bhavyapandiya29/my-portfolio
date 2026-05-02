@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/project.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/extracurricular.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- crossorigin="anonymous" referrerpolicy="no-referrer"> -->
 
@@ -32,6 +33,7 @@
             <div id="container_right">
                 <a href="#skills">skills</a>
                 <a href="#project">project</a>
+                <a href="#extracurricular">extracurricular</a>
                 <a href="#certificates">certificates</a>
                 <a href="#contact">contact</a>
             </div>
@@ -66,16 +68,10 @@
   <span class="about-intro-mobile">
     Hi, I’m Bhavya Pandiya 👋, and I am a <span class="changing-text"></span>.<br><br>
   </span>
-  I’m a 2nd-year B.Tech Computer Science student 🎓 
-  at Acropolis Institute of Technology and Research, Indore. I have a strong interest in web development and design. Currently, 
-  I’m learning and working with HTML, CSS, and JavaScript, and I enjoy building simple yet impactful web projects as
-  I continue to grow my skills.
-  I’m passionate about creating impactful designs that not only look good but also provide a meaningful user experience.<br><br>
-  Being at the start of my journey 🚀, I’m always curious, exploring new technologies, and eager to learn from every opportunity.
-  Outside of academics, I love travelling and drawing/artwork,
-  which spark my creativity and bring fresh perspectives to my projects.<br><br>
-  My current goal is to keep learning, improve my development skills ⚡,
-  and contribute to innovative projects in the near future.
+  I’m a B.Tech CSE student at AITR passionate about frontend development, cloud technologies, and building modern web experiences. With 55+ Google Cloud Badges and experience in creating clean, user-friendly interfaces, I’m also learning DSA to strengthen my problem-solving skills.<br><br>
+  As a Graphic Designer at ACM-AITR, I design event graphics and theme-based layouts. I also worked on SIH 2025 project ideas—KrishiMarg and Megh AI—which helped me grow in teamwork and real-world thinking.<br><br>
+  Always learning and improving.<br>
+  Let’s connect and explore opportunities in frontend development, cloud computing, and tech innovation!
 </p>
         </section>
 
@@ -84,6 +80,8 @@
            <div class="skills_image">
             <img src="https://cdn.iconscout.com/icon/free/png-256/free-c-language-icon-svg-png-download-7417301.png" alt="">
             <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-s-3d-icon-png-download-7578015.png" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java" title="Java">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
            <img src="https://cdn.iconscout.com/icon/free/png-512/free-css-icon-svg-download-png-722685.png?f=webp&w=512" alt="">
             <img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-svg-download-png-3029998.png?f=webp&w=512" alt="">
@@ -96,16 +94,93 @@
 
          <section id="project" class="project">
             <div id="project_heading"><p>Project</p></div>
-<div id="projects">
-    <img src="images/image.png" alt="">
-    
+<div class="project-container">
+    <div class="project_slider">
+        <div class="project_item">
+            <img src="images/smart_farming_1.jpg" alt="Smart Farming System 1">
+        </div>
+        <div class="project_item">
+            <img src="images/smart_farming_2.jpg" alt="Smart Farming System 2">
+        </div>
+        <div class="project_item">
+            <img src="images/smart_farming_3.png" alt="Smart Farming System App">
+        </div>
+    </div>
+    <div id="project_text">
+        <p><h2>IoT based Smart Farming System</h2><br>
+            An IoT-based solution using ESP32, soil moisture and DHT11 sensors for real-time monitoring,
+            automated irrigation via Android app, and Firebase integration for efficient data management.</p>
+    </div>
 </div>
-<div id="project_text">
-    <p><h2>IoT based Smart Farming System</h2><br>
-        An IoT-based solution using ESP32, soil moisture and DHT11 sensors for real-time monitoring,
-         automated irrigation via Android app, and Firebase integration for efficient data management.</p>
+
+<div class="project-container" style="margin-top: 60px;">
+    <div class="project_slider">
+        <div class="project_item">
+            <img src="images/krishimarg1.png" alt="KrishiMarg Landing Page">
+        </div>
+        <div class="project_item">
+            <img src="images/krishimarg2.png" alt="KrishiMarg Dashboard">
+        </div>
+    </div>
+    <div id="project_text">
+        <p><h2>KrishiMarg (SIH 2025)</h2><br>
+            Built during the Smart India Hackathon (SIH 2025) Internal College Round by team ByteCraft. 
+            KrishiMarg is an AI-based crop recommendation platform designed to help farmers make smarter 
+            and more informed decisions. It provides real-time field monitoring and an interactive AI chatbot.</p>
+    </div>
 </div>
-<section  id="certificates" class="certificate">
+
+<div class="project-container" style="margin-top: 60px;">
+    <div class="project_slider">
+        <div class="project_item">
+            <img src="images/megh1.png" alt="Megh AI Screenshot 1">
+        </div>
+        <div class="project_item">
+            <img src="images/megh2.png" alt="Megh AI Screenshot 2">
+        </div>
+        <div class="project_item">
+            <img src="images/megh3.png" alt="Megh AI Screenshot 3">
+        </div>
+        <div class="project_item">
+            <img src="images/megh4.png" alt="Megh AI Screenshot 4">
+        </div>
+    </div>
+    <div id="project_text">
+        <p><h2>Megh AI (SIH 2025)</h2><br>
+            Cloudburst Early Warning and Alarm System built during the SIH 2025 Internal College Round by team ByteCraft. 
+            This project focuses on detecting early signs of cloudburst conditions and providing timely alerts 
+            during extreme weather situations. Working on this helped us understand real-world disaster management challenges.</p>
+    </div>
+</div>
+<section id="extracurricular" class="extracurricular">
+    <div id="extracurricular_heading">
+        <p>Extra Curricular Activities</p>
+    </div>
+    <div class="ec-container">
+        <!-- Google Arcade Card -->
+        <div class="ec-card">
+            <div class="ec-image-container">
+                <img src="images/google_arcade1.png" alt="Google Arcade Swag 1">
+                <img src="images/google_arcade2.png" alt="Google Arcade Swag 2">
+            </div>
+            <h2>Google Cloud Arcade</h2>
+            <p>Participated in the Google Cloud Arcade program, exploring cloud technologies, completing hands-on labs, and earning exclusive swags and badges as a reward for continuous learning and skill development.</p>
+        </div>
+        
+        <!-- Anchoring Card -->
+        <div class="ec-card">
+            <div class="ec-image-container" id="anchoring-images">
+                <img src="images/anchoring1.png" alt="Anchoring Event 1" style="width: 31%;">
+                <img src="images/anchoring2.jpg" alt="Anchoring Event 2" style="width: 31%;">
+                <img src="images/anchoring3.png" alt="Anchoring Event 3" style="width: 31%;">
+            </div>
+            <h2>Event Anchoring</h2>
+            <p>Had an amazing opportunity to do anchoring at Hacking 101, a cybersecurity workshop organized by AITR ACM, ACM-W, and SIGAI. In collaboration with Chakravue, the session offered hands-on exposure to Capture The Flag (CTF) challenges. This experience helped me strengthen my confidence, communication, and stage presence!</p>
+        </div>
+    </div>
+</section>
+
+<section id="certificates" class="certificate">
     <div id="certificate_heading">
       <p>Certificates</p>
     </div>
@@ -116,6 +191,12 @@
       </div>
       <div class="certificate_item">
         <img src="workshop_certificate.jpeg" alt="Certificate 2">
+      </div>
+      <div class="certificate_item">
+        <img src="datacraft_certificate.png" alt="Certificate 3">
+      </div>
+      <div class="certificate_item">
+        <img src="tech_o_tsav_certificate.png" alt="Certificate 4">
       </div>
     </div>
   </section>

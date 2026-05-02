@@ -1,15 +1,16 @@
 
           
-.skills {color: aliceblue;
-    height: 400px;
+.skills {
+    color: aliceblue;
+    height: auto;
+    padding-bottom: 40px;
     margin: 30px auto;
-    width: 50%;
-  
-    background-color:rgb(20, 21, 21) ;
-   
-  border: 2px solid #0283f4;
-  border-radius: 12px;
-  animation: glowBorder 0.5s infinite alternate;
+    width: 70%;
+    max-width: 800px;
+    background-color: rgb(20, 21, 21);
+    border: 2px solid #0283f4;
+    border-radius: 12px;
+    animation: glowBorder 0.5s infinite alternate;
 }
 
 @keyframes glowBorder {
@@ -33,22 +34,29 @@ padding: 3vh;
 }
 
 
- .skills_image img {
+.skills_image {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    gap: 40px;
+    padding: 0 0 40px 0;
+}
+
+.skills_image img {
     height: 60px;
     width: 60px;
-    margin-top: 4vh;
-    margin-right: 15px;
-    margin-left: 98px;
+    margin: 0;
+    object-fit: contain;
     border-radius: 12px;
     border: 2px solid #64adee;
     box-shadow: 0 0 10px #64adee, 0 0 20px #64adee;
     transition: 0.3s ease-in-out;
-  }
+}
   
-  .skills_image img:hover {
+.skills_image img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px #64adee, 0 0 40px #64adee;
-  } 
+}
   
 
    
