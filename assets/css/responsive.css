@@ -230,6 +230,46 @@
     text-align: center;
     font-size: 14px;
   }
+
+  /* Extra Curricular Mobile Fixes */
+  #extracurricular_heading {
+    font-size: 2rem;
+    padding: 20px 10px;
+    margin-top: 20px;
+  }
+
+  .ec-container {
+    max-width: 95%;
+    gap: 20px;
+  }
+
+  .ec-card {
+    width: 100%;
+    min-width: unset;
+    padding: 15px;
+  }
+
+  .ec-image-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    height: auto !important;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .ec-image-container img {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover;
+    margin: 0 !important;
+  }
+
+  /* If there's a 3rd image, make it centered across both columns */
+  .ec-image-container img:nth-child(3):last-child {
+    grid-column: 1 / span 2;
+    width: 50% !important;
+    justify-self: center;
+  }
 }
 
 
