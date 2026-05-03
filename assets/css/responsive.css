@@ -18,7 +18,7 @@
   
   
   .image {
-    margin-top: 70px;              
+    margin-top: 100px;              
     width: 65vw;
     height: 65vw;
     max-width: 320px;
@@ -115,31 +115,32 @@
   #project_heading {
     font-size: 2rem;
     text-align: center;
-    padding: 20px 10px;
+    padding: 10px 10px; /* Reduced padding */
+    margin-top: 20px;
   }
   
-  #projects {
-    margin: 20px auto;
+  .project_slider {
+    margin: 10px auto;
     text-align: center;
+    height: 300px; /* Fixed height for mobile slider */
   }
   
-  #projects img {
+  .project_item img {
     max-width: 95%; 
+    max-height: 95%;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 12px;
-    
     box-shadow: none;
   }
   
   #project_text {
-    margin: 30px auto 0 auto;
+    margin: 15px auto 0 auto; /* Reduced margin from 30px to 15px */
     max-width: 95%;
-    padding: 20px;
-    font-size: 16px;
+    padding: 15px; /* Reduced padding from 20px */
+    font-size: 14px; /* Slightly smaller font */
     text-align: center;
-   
     width: 95%;
     box-sizing: border-box;
   }
